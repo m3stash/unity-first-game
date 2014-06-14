@@ -20,10 +20,12 @@ public class ScrollingScript : MonoBehaviour
 	void Update()
 	{
 		float inputX = Input.GetAxis("Horizontal");
+		float inputY = 0;
+
 		// Mouvement
 		Vector3 movement = new Vector3(
 			direction.x * speed.x * inputX,
-			speed.y * direction.y,
+			direction.y * speed.y * inputY,
 			0);
 		
 		movement *= Time.deltaTime;
