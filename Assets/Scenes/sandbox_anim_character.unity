@@ -428,7 +428,7 @@ GameObject:
   - 114: {fileID: 575264460}
   - 68: {fileID: 575264461}
   m_Layer: 0
-  m_Name: Dream_Sword
+  m_Name: Dream_sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,9 +479,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 425d705f115a9ca41b16bc911fd923e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
   damageAmount: 1
   attacking: 0
+  forceToAdd: 1
+  attackForce: 500
 --- !u!68 &575264461
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -493,7 +494,7 @@ EdgeCollider2D:
   m_IsTrigger: 1
   m_Points:
   - {x: -.467211425, y: -.547962308}
-  - {x: 1.50294471, y: 1.81103468}
+  - {x: 1.35040867, y: 1.7109381}
 --- !u!1 &625288045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,7 +1059,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1330461471}
-  m_Mass: 40
+  m_Mass: 4
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -1404,9 +1405,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1902623162}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1421,7 +1422,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.27999997, y: 6.80000019}
+  m_Size: {x: 1.72000003, y: 6.76999998}
   m_Center: {x: 0, y: -2.3599999}
 --- !u!95 &1902623166
 Animator:
@@ -1453,7 +1454,7 @@ MonoBehaviour:
   attack: 0
   moveForce: 365
   maxSpeed: 5
-  jumpForce: 100
+  jumpForce: 1500
 --- !u!212 &1902623168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1485,6 +1486,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2100671291}
   - 212: {fileID: 2100671292}
+  - 50: {fileID: 2100671294}
   m_Layer: 0
   m_Name: right_arm
   m_TagString: Untagged
@@ -1526,6 +1528,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 7a5761a84e64cc64bb0e3ca9654ab8ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &2100671294
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100671290}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &2122079629
 GameObject:
   m_ObjectHideFlags: 0

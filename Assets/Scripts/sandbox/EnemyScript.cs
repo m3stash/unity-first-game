@@ -11,12 +11,14 @@ public class EnemyScript : MonoBehaviour
 	//public GameObject hundredPointsUI;	// A prefab of 100 that appears when the enemy dies.
 	//public float deathSpinMin = -100f;			// A value to give the minimum amount of Torque when dying
 	//public float deathSpinMax = 100f;			// A value to give the maximum amount of Torque when dying
-	
+
+	public float moveSpeed = 3f;
 	
 	private SpriteRenderer ren;			// Reference to the sprite renderer.
 	//private Transform frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 	private bool dead = false;			// Whether or not the enemy is dead.
-	
+	[HideInInspector]
+	public bool facingRight = true;	
 	
 	void Awake()
 	{
@@ -26,8 +28,7 @@ public class EnemyScript : MonoBehaviour
 		//score = GameObject.Find("Score").GetComponent<Score>();
 	}
 	
-	void FixedUpdate ()
-	{
+	void FixedUpdate (){
 		// Create an array of all the colliders in front of the enemy.
 		//Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
 		
@@ -44,11 +45,11 @@ public class EnemyScript : MonoBehaviour
 //		}
 		
 		// Set the enemy's velocity to moveSpeed in the x direction.
-//		rigidbody2D.velocity = new Vector2(transform.localScale.x * moveSpeed, rigidbody2D.velocity.y);	
+		rigidbody2D.velocity = new Vector2(transform.localScale.x * moveSpeed, rigidbody2D.velocity.y);	
 		
-		if(HP <= 0 && !dead)
-			// ... call the death function.
+		if (HP <= 0 && !dead){
 			Death ();
+		}
 	}
 	
 	public void Hurt(int damageAmount)
