@@ -24808,11 +24808,4 @@ AnimationClip:
     path: perso_cuisses-D/perso_genoux-D/perso_pied-gauche-D
     classID: 4
     script: {fileID: 0}
-  m_Events:
-  - time: 0
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

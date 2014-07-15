@@ -14,14 +14,14 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: attack
+  - m_Name: Jump
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Jump
-    m_Type: 9
+  - m_Name: attack
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -71,7 +71,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: attack
     m_EventTreshold: 0
     m_ExitTime: .876033068
   m_Atomic: 1
@@ -151,7 +151,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: attack
     m_EventTreshold: 0
     m_ExitTime: .100000001
   m_Atomic: 1
@@ -191,7 +191,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: attack
     m_EventTreshold: 0
     m_ExitTime: 3
   m_Atomic: 1
@@ -271,7 +271,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: attack
     m_EventTreshold: 0
     m_ExitTime: .634146333
   m_Atomic: 1
@@ -351,7 +351,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: attack
     m_EventTreshold: 0
     m_ExitTime: .699999988
   m_Atomic: 1
@@ -454,7 +454,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: perso_attack
-  m_Speed: 3
+  m_Speed: 15
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: e3ab8d4712d1f00468136ab6e3730ba7, type: 2}

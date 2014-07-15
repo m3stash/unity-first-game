@@ -6540,7 +6540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 2}
-  direction: {x: 1, y: 0}
+  direction: {x: 1, y: 1}
 --- !u!1 &856257710
 GameObject:
   m_ObjectHideFlags: 0
@@ -6657,6 +6657,10 @@ Prefab:
     - target: {fileID: 2000000, guid: 456041973fa66304a88baff84020ff4c, type: 2}
       propertyPath: m_HDR
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 456041973fa66304a88baff84020ff4c, type: 2}
+      propertyPath: orthographic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5400000, guid: 456041973fa66304a88baff84020ff4c, type: 2}
@@ -6952,9 +6956,12 @@ MonoBehaviour:
   facingRight: 1
   jump: 0
   attack: 0
+  waitingEndOfAttack: 0
   moveForce: 365
   maxSpeed: 10
   jumpForce: 5000
+  attackDuration: 0
+  animator: {fileID: 0}
 --- !u!61 &878621854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9359,8 +9366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178f6d8db287032449e34e4ce65d0568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 2, y: 2}
-  direction: {x: 1, y: 0}
+  speed: {x: 2, y: 5}
+  direction: {x: 1, y: -1}
 --- !u!1 &1242411927
 GameObject:
   m_ObjectHideFlags: 0
@@ -15993,7 +16000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 6, y: 2}
-  direction: {x: 1, y: 0}
+  direction: {x: 1, y: 1}
 --- !u!1 &2102581625
 GameObject:
   m_ObjectHideFlags: 0
